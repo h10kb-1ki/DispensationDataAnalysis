@@ -37,6 +37,7 @@ with st.sidebar:
     if btn0:
         df = load_data(Pop, Pc)
 
+st.dataframe(df)
 #---------------------------------------------------------
 st.subheader('指定日・時間ごとの調剤負荷', divider="gray")
 dates = sorted(list(set(df['更新日時'].tolist())))
