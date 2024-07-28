@@ -14,6 +14,7 @@ with st.sidebar:
     st.write('・麻薬：未設定')
     st.write('・毒薬（Revは追加加点）：未設定')
     st.write('・特定生物由来：未設定')
+    st.write('※祝日フラグ')
 
 df = pd.read_excel('調剤負荷データ.xlsx')
 df['date'] = pd.to_datetime(df['更新日'])
